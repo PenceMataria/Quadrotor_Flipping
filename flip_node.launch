@@ -1,0 +1,5 @@
+<launch>
+    <node name="flip_node" pkg="mav_linear_mpc" type="flip_node" respawn="true" clear_params="true" output="screen">
+      <rosparam file="$(find mav_linear_mpc)/resources/flip_node.yaml" />
+    </node>
+</launch>
